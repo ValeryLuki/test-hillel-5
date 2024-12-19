@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" >
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="page-title">Page Contacts</h1>
+        <nav class="menu">
+          <ul>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="articles.html">Articles</a>
+            </li>
+            <li>
+              <a href="contacts.html">Contacts</a>
+            </li>
+            <li>
+              <a href="gallery.html">Gallery</a>
+            </li>
+            <li>
+              <a href="anchors.html">Anchors</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="contact-info">
+          <h2 class="content-title">Contact information</h2>
+          <div class="info">
+            <p>
+              <strong>Address:</strong> Center avenue, office 46, Brooklyn, NY
+              11201 United States
+            </p>
+            <strong>Phone:</strong>
+            <a href="tel:+380501234567" class="contact-link">+380501234567</a>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:info1@example.ua" class="contact-link"
+                >info1@example.ua</a
+              >
+            </p>
+            <strong>Working hours:</strong> Mon-Fri, 09:00–18:00
+            <p>
+              <strong>Social networks:</strong>
+            </p>
+            <ol class="social-list">
+              <li class="social-item">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  title="Facebook"
+                  class="social-link"
+                  >Facebook</a
+                >
+              </li>
+              <li class="social-item">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  title="Instagram"
+                  class="social-link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="social-item">
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  title="Twitter"
+                  class="social-link"
+                  >Twitter</a
+                >
+              </li>
+            </ol>
+          </div>
+        </section>
+        <section class="contact-form">
+          <h2 class="content-title">Write to us</h2>
+          <div>
+            <form action="/submit-data" method="post" class="form">
+              <fieldset class="form-fieldset">
+                <legend class="form-legend">Information</legend>
+                <div class="form-group">
+                  <label for="name" class="form-label">Your name:</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    class="form-input"
+                    required
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">Your email:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    class="form-input"
+                    required
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="message" class="form-label">Message:</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="Enter your massage"
+                    class="form-textarea"
+                    required
+                  ></textarea>
+                </div>
+              </fieldset>
+              <button type="submit" class="form-button">Send</button>
+
+              <fieldset>
+                <div>
+                  <input type="checkbox" name="subscribe" value="yes" >
+                  Subscribe to news
+                  <input type="radio" name="gender" value="male" > Man
+                  <input type="radio" name="gender" value="female" > Woman
+                  <input type="number" name="quantity" min="1" max="10" >
+                  <input type="date" name="birthday" >
+                  <button type="submit" class="form-button">Send</button>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <div>
+                  <label for="flower">Choose a flower:</label>
+                  <select id="flower" name="flower">
+                    <option value="rose">Rose</option>
+                    <option value="cactus">Сactus</option>
+                    <option value="chamomile">Сhamomile</option>
+                  </select>
+                  <input type="submit" value="Send" >
+                </div>
+              </fieldset>
+              <button
+                type="button"
+                onclick="alert('Hello!')"
+                class="form-button"
+              >
+                Click me
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <p>&copy; &lt; Site has Copyrights &gt;</p>
+      </footer>
+    </div>
+  </body>
+</html>
